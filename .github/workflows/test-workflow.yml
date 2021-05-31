@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: checkout current repo using hv-checkout
-        uses: actions/checkout@v2
+        uses: hv-actions/checkout@v2
 
       - name: testing checkout
         run: |
