@@ -17,6 +17,6 @@ jobs:
         uses: hv-actions/checkout@v2
 
       - name: AWS CLI Action
-        uses: ./
+        uses: ./aws-cli-action
         with:
           command: --version
