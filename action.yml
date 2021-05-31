@@ -1,0 +1,17 @@
+name: 'AWS CLI'
+description: 'GitHub Action for AWS CLI'
+author: 'Srinivas Bommadevara'
+inputs:
+  version:  # id of input
+    description: 'AWS CLI Version'
+    required: false
+    default: 'latest'
+  command:
+    description: 'CLI Command without aws at start'
+    required: false
+    default: '--version'  
+runs:
+  using: docker
+  image: 'amazon/aws-cli:${{ inputs.version }}'
+  args:
+    - ${{ inputs.command }}
