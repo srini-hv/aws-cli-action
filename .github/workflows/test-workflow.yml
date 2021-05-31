@@ -20,7 +20,7 @@ jobs:
         run: |
           ls -ltr .
 
-      - name: AWS CLI Action
-        uses: ./
-        with:
-          command: --version
+      # - name: AWS CLI Action
+      #   uses: ./
+      #   with:
+      #     command: --version
