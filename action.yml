@@ -13,5 +13,5 @@ inputs:
 runs:
   using: docker
   image: 'docker://amazon/aws-cli:latest'
-  args:
-    - ${{ inputs.command }}
+  # args:
+  #   - ${{ inputs.command }}
