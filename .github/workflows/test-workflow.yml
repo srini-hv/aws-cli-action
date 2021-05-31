@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: checkout current repo using hv-checkout
-        uses: hv-actions/checkout@v2
+      - name: checkout current repo using checkout
+        uses: actions/checkout@v2
 
       - name: testing checkout
         run: |
