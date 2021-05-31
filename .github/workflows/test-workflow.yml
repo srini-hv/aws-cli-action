@@ -14,14 +14,14 @@ jobs:
 
     steps:
       - name: checkout current repo using hv-checkout
-        uses: hv-actions/checkout@master
+        uses: hv-actions/checkout@v2
 
       - name: testing checkout
         run: |
           ls -a
           ls -ltr ./aws-cli-action
 
-      # - name: AWS CLI Action
-      #   uses: ./
-      #   with:
-      #     command: --version
+      - name: AWS CLI Action
+        uses: ./
+        with:
+          command: --version
