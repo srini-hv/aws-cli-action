@@ -19,7 +19,7 @@ jobs:
       - name: testing checkout
         run: |
           ls -a
-          ls -ltr ./.aws-cli-action
+          ls -ltr ./aws-cli-action
 
       # - name: AWS CLI Action
       #   uses: ./
