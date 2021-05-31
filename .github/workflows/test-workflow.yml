@@ -21,6 +21,6 @@ jobs:
           ls -ltr
 
       - name: AWS CLI Action
-        uses: ./aws-cli-action
+        uses: ./
         with:
           command: --version
